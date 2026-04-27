@@ -1,0 +1,88 @@
+CLASS BANK_SERVICE
+	{
+
+	PUBLIC DEPOSIT(AMOUNT, ACCOUNT_NO)
+	{
+		RETURN DEPOSIT_AMOUNT;
+	}
+	
+	PUBLIC WITHDRAW(AMOUNT, ACCOUNT_NO)
+	{
+		RETURN WITHDRAWAL_AMOUNT;
+	}
+	
+	PUBLIC PRINT_PASSBOOK(ACCOUNT_NO)
+	{
+		
+	}
+	
+	PUBLIC GET_LOAN_INFO(LOAN_TYPE)
+	{
+		IF (LOAN_TYPE = "HOMELOAN")
+		{
+			
+		}
+	
+		IF (LOAN_TYPE = "PERSONAL")
+		{
+		}
+		
+		IF (LOAN_TYPE = "CAR")
+		{
+		
+		}
+	}
+	
+	PUBLIC SEND_OTP(METHODS)
+	{
+		IF (METHOD == "EMAIL")
+		{
+			
+		}
+	}
+}
+
+--serprate classes for each service--
+CLASS PRINTER_SERVICE 
+{
+	PUBLIC PRINT_PASSBOOK(ACCOUNT_NO)
+	{
+	}
+}
+
+CLASS LOAN_SERVICE
+{
+	PUBLIC VOID GET_LOAN_INFO(STRING LOAN_TYPE)
+	{
+		IF (LOAN_TYPE = "HOMELOAN")
+		{
+		}
+	
+		IF (LOAN_TYPE = "PERSONAL")
+		{
+			
+		}
+		
+		IF (LOAN_TYPE = "CAR")
+		{
+			
+		}
+		IF (LOAN_TYPE = "GOLD")
+		{
+			
+		}
+	}
+}
+
+CLASS NOTIFICATION_SERVICE 
+{
+	PUBLIC VOID SEND_OTP(STRING METHODS)
+	{
+		IF (METHOD == "EMAIL")
+		{
+		}
+		IF (METHOD == "MOBILE")
+		{
+		}
+	}
+}
